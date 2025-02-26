@@ -1,3 +1,5 @@
+define config.steam_appid = 1234567  # Replace with your actual Steam App ID
+
 # Steam settings
 init python:
     # Steam App ID and registration directory
