@@ -28,3 +28,35 @@ I've added Steam achievements to my Ren'Py game, and I wanted to share the setup
     Profit.
 
 Feel free to use, modify, or improve it. If your game has cooler achievements than mine, I’m both impressed and jealous. 😄
+
+
+Steam Achievements Checklist ✅
+
+Before pushing your game to Steam, make sure you've checked off everything:
+
+✔️ Steamworks SDK Integration
+
+Ensure steam_api.dll (Windows) or libsteam_api.so (Linux/Mac) is in the correct folder.
+
+✔️ Achievements Are Registered in Steamworks
+
+Go to Steamworks Dashboard > Achievements and add the achievement IDs (ACH_EP1_COMP, etc.).
+
+✔️ Unlock Calls Are Implemented
+
+Use achievement.unlock("ACH_ID") when a player meets the achievement condition.
+
+✔️ Steam Overlay Test
+
+Run the game via Steam, press Shift + Tab, and check if achievements unlock.
+
+✔️ No Errors in Ren'Py Console
+
+Open Ren'Py Console (Shift + O) and check for Steam API errors.
+
+
+Final Notes 📝
+
+If you're seeing issues, double-check your Steamworks setup and ensure the API is properly loaded. And if all else fails… well, at least your players will have fun without achievements! 😆
+
+Happy coding! 🎮
